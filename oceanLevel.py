@@ -9,7 +9,7 @@ years = int(input("Input a value representing years between 1 and 25: "))  # Tak
                                                                            # setting that input to the var years
 if years >=1 and years <= 26:  # If year is within the given range then do the math below
     expected_rise = years * mm_rise_per_year  # Math
-    print("   ,(   ,(   ,(   ,(   ,(   ,(   ,(   ,(\n `-'  `-'  `-'  `-'  `-'  `-'  `-'  `-'  `")  # Who doesn't like art?
+    print("   ,(   ,(   ,(   ,(   ,(   ,(   ,(   ,(\n `-'  `-'  `-'  `-'  `-'  `-'  `-'  `-'  `")# Who doesn't like art?
     print(f"The sea level in {years} year(s) is expected to be:"     # Prints years
           f"", format(expected_rise, '.1f'), "millimeters higher.")  # Prints expected_rise formatted to one decimal
 else:
