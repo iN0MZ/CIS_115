@@ -8,9 +8,9 @@ b_value = 15    # Sets the ticket prices as constants
 c_value = 10    #
 
 def main():
-    num1, num2, num3 = get_tickets_sold()  # Calls get tickets sold and sets output to num 1,2,3
-    total_sum = calc_total_sales(num1,num2,num3) # Calls calc_total_sales passing num 1,2,3 - Sets to total_sum variable
-    output(total_sum) # calls total sum function
+    num1, num2, num3 = get_tickets_sold()           # Calls get tickets sold and sets output to num 1,2,3
+    total_sum = calc_total_sales(num1, num2, num3)  # Calls calc_total_sales passing num 1,2,3 - Sets to total_sum variable
+    output(total_sum)                               # calls total sum function
 
 def get_tickets_sold(): # Asks the user for input then sets the input to variables num 1,2,3
     num1 = int(input("How many Class A tickets were sold? "))
@@ -29,4 +29,4 @@ def output(total_sum): # Prints the total sum variable
     print(f"${total_sum}")
 
 
-main()
+main() # Calls main function
