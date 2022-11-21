@@ -14,7 +14,7 @@ def main():
     paint_cost, multiplier = calculate_paint(area, cost_per_gallon)
     labor_total = int(labor_charges(multiplier))
     final_bill = total_charges(paint_cost, labor_total)
-    printTotals(labor_total, paint_cost, multiplier)
+    printTotals(labor_total, paint_cost, multiplier, final_bill)
 
 def get_data():
     area = int(input("Enter total wall space in SqFt:"))
@@ -31,8 +31,8 @@ def labor_charges(multiplier):
     return labor_total
 
 def total_charges(paint_cost, labor_total):
-    math = sum(paint_cost, total_charges)
-    return math
+    final_bill = paint_cost + labor_total
+    return final_bill
 
 def printTotals(labor_total, paint_cost, multiplier, final_bill):
     print(f"Total labor required in hours: {multiplier}")
