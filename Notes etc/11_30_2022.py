@@ -13,6 +13,7 @@ def main():
         print('Cannot divide by 0, please try again.')
     except:
         print("An unknown error has occurred.")
-    print(result)
+    else:
+        print(result)
 
 main()
