@@ -15,9 +15,9 @@ def main():
         print("file does not exist")
         print("Would you like to create a new file?\n(y/n):")
 
-        userInput = input()
-        while userInput.lower() != 'y' and userInput.lower() != 'n':
-            userInput = input("Please enter a valid answer(y / n): ")
+    userInput = input()
+    while userInput.lower() != 'y' and userInput.lower() != 'n':
+        userInput = input("Please enter a valid answer(y / n): ")
         if userInput.lower() == 'n':
             print('Closing program.')
             sys.exit()
@@ -25,5 +25,5 @@ def main():
             new_file = None
             new_file.write(str(userInput))
             new_file.write("This is a new file!")
-            new_file.close()
+        new_file.close()
 main()
