@@ -1,7 +1,7 @@
 # Ryan Carroll
 # CIS_115_NLE01
 # paintEstimater.py
-# Asks user square footage and returns data required to paint
+# Asks user square footage / paint costs and returns data required to quote jobs
 
 # A painting company has determined that for every 112 square feet of wall space, one gallon of paint and
 # eight hours of labor will be required.
