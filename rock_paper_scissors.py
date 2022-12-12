@@ -9,7 +9,7 @@ cpu_roll = None
 
 
 ########################################
-# Main: while loop prints the title img, copywrite info, as well as wins and losses
+# Main: while loop prints the title img, copywriter, as well as wins and losses
 # defines cpu_roll, user_str_input and player_roll
 # cpu_roll = 1, 2 or 3 assigned by cpu_choice function
 # user_str_input = 'rock' 'paper' or 'scissors'
