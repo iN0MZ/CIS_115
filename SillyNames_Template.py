@@ -2,43 +2,38 @@
 ##Using Tuples 
 
 import random
+import csv
 
 def main():
     ##the following print statements will be provided to you
+    first_name_tup = tupleCreate()
+    print(f"{first_name_tup}")
     print("Welcome to the Silly Name generator.")
     print("Generate a list of names for your sidekick/friend/pet.")
     print("The 10 names will be exported to a .txt file!")
-    # userInput()
+    fileName = userInput()
+
     tupleCreate()
 
     ##Create Tuple with given first names.
-    # first_name_file = (open('first_names_silly_name_generator.txt', 'r'))
-    # print({first})
-    # ##create tuple with given last names.
-    # last = open('last_names_silly_name_generator.txt', 'r')
+    first_name_file = 'first_names_silly_name_generator.txt'
+    last_name_file = 'last_names_silly_name_generator.txt'
+    first = tupleCreate()
+    last = tupleCreate()
 
     ##create a function called userInput() to receive the name of the file.
 
-def userInput():
-    firstnames = input()
-    file_contents = infile.read()
-    print(file_contents)
-
-
     input("\nHit Enter to Generate.\n")
-
 
     ##create a function called "createFile"
     ##that only takes user's file name and returns a file object.
 
-
-    ##place your generator file here. It is a void function that 
+    ##place your generator file here. It is a void function that
     ##takes 3 arguments.
-
-
 
     print("\n\nFile has been created.\n")
     input("Hit enter to Quit")
+
 
 def userInput():
     ##This function takes no parameters
@@ -50,12 +45,17 @@ def userInput():
     ##return the file name string
     user = input("\nPlease enter a file name:\n")
 
-def tupleCreate():
-    mylist = None
-    with open('first_names_silly_name_generator.txt', 'r') as f:
-        mylist = [tuple(map(float, i.split(','))) for i in f]
 
-    print(mylist)
+def tupleCreate():
+    first_name_tup = None
+    # with open('first_names_silly_name_generator.txt', 'r') as f:
+    #     mylist = [tuple(map(str, i.split(','))) for i in f]
+
+    with open("{}") as load_file:
+        reader = csv.reader(load_file, delimiter=",")
+        data = [row for row in reader]
+        first_name_tup = tuple(*data)
+        return first_name_tup
     # ('word1','word2','word3','word4','word5')
 
 
