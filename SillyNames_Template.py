@@ -23,6 +23,8 @@ def main():
 
     ##create a function called userInput() to receive the name of the file.
 
+
+
     input("\nHit Enter to Generate.\n")
 
     ##create a function called "createFile"
@@ -46,16 +48,7 @@ def userInput():
     user = input("\nPlease enter a file name:\n")
 
 
-def tupleCreate():
-    first_name_tup = None
-    # with open('first_names_silly_name_generator.txt', 'r') as f:
-    #     mylist = [tuple(map(str, i.split(','))) for i in f]
 
-    with open("{}") as load_file:
-        reader = csv.reader(load_file, delimiter=",")
-        data = [row for row in reader]
-        first_name_tup = tuple(*data)
-        return first_name_tup
     # ('word1','word2','word3','word4','word5')
 
 
