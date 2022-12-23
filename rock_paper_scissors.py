@@ -137,5 +137,4 @@ def clear():
 # evaluates to True and the main() function is called.
 #
 
-if __name__ == "__main__":
-    main()
+main()
